@@ -6,10 +6,11 @@ const bufferMacOs = addon.process(+process.argv[2]);
 // const bufferMacOs = addon.process(process.pid);
 
 const buffer = bufferMacOs;
-// const buffer = Buffer.from(require('./mock'), 'hex');
+// const buffer = Buffer.from(require('./mockSipOnAccessibleProcess'), 'hex');
 
 // debug:
-// if (true) console.log(bufferToString(buffer))
+// console.log(bufferToString(buffer))
+// console.log(buffer.toString('hex'))
 
 const sizeofCppInt = 4;
 const buffersWithStrings = [];
